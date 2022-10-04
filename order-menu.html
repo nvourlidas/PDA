@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Owner</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background:#4d4d4d;
+}
+img{width: 30%; margin:3px 70px 15px 47px; }
+
+p{font-size: 40px; margin-left: 50px;}
+
+@media screen and (max-height: 670px) {
+  img{width: 50%; margin:3px 70px 15px 47px; background-color: white; -webkit-border-radius: 20px 18px 18px 23px;
+-moz-border-radius: 20px 18px 18px 23px;
+border-radius: 20px 18px 18px 23px; }
+
+  p{font-size: 20px; margin:center; color: white;}
+
+  table{margin-top: 60px;}
+
+  #img1{
+    width:9%;
+    height: 2px;
+
+  }
+  .footer button{
+    background-color: #ff0000;
+    border: none;
+    height: 2px;
+  }
+
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ff0000;
+   color: white;
+   text-align: center;
+   height: 10px;
+}
+
+  }
+
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ff0000;
+   color: white;
+   text-align: center;
+   height: 50px;
+}
+
+.footer button{
+  background-color: #ff0000;
+  border: none;
+}
+
+#img1{
+  width:12%;
+  background-color: none;
+  height: 50px;
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <table>
+  <tbody>
+  <tr>
+  <td><a href="Coffee-menu.php">
+  <img  src="coffee.png"  alt=""  />
+</a> <p>Coffee</p></td>
+  <td><a href="food-menu.php">
+  <img  src="hamburger.png"  alt=""  />
+</a><p>Food</p></td>
+  </tr>
+  <tr>
+  <td><a href="drinks-menu.php">
+  <img  src="beer.png"  alt=""  />
+</a><p>Drinks</p></td>
+  <td><a href="chocolate-menu.php">
+  <img  src="chocolate.png"  alt=""  />
+</a><p>Chocolate</p></td>
+  </tr>
+  <tr>
+  <td><a href="tea-menu.php">
+  <img  src="tea.png"  alt=""  />
+</a><p>Tea</p></td>
+  <td><a href="pastry-menu.php"><img  src="cupcake.png"  alt=""  /></a><p>Pastry</p></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  </tr>
+  </tbody>
+  </table>
+
+  <div class="footer">
+  <button onclick="goBack()"><img id="img1"  src="left-arrow.png"  alt="" /></button>
+</div>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+</body>
+</html>

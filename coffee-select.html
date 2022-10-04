@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Owner</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background:#4d4d4d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #ff0000;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ff0000;
+  color: white;
+}
+
+
+a {
+  color: dodgerblue;
+}
+
+
+
+
+@media screen and (max-height: 670px) {
+  img{width: 50%; margin:3px 70px 15px 47px; background-color: white; -webkit-border-radius: 20px 18px 18px 23px;
+-moz-border-radius: 20px 18px 18px 23px;
+border-radius: 20px 18px 18px 23px; }
+
+  p{font-size: 20px; margin:center; color: white;}
+
+  table{margin-top: 60px;}
+
+  #img1{
+    width:9%;
+    height: 2px;
+
+  }
+  .footer button{
+    background-color: #ff0000;
+    border: none;
+    height: 2px;
+  }
+
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ff0000;
+   color: white;
+   text-align: center;
+   height: 10px;
+}
+
+  }
+
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ff0000;
+   color: white;
+   text-align: center;
+   height: 50px;
+}
+
+.footer button{
+  background-color: #ff0000;
+  border: none;
+}
+
+#img1{
+  width:12%;
+  background-color: none;
+  height: 50px;
+}
+
+#txt{
+  float:right;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+  <form action="add-order.php" method="post">
+    <div class="container">
+      <h1>Select style</h1>
+
+      <hr>
+
+
+
+      <div class="selectdiv">
+    <label>
+        <select>
+            <option selected> Select Size </option>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Grande</option>
+        </select>
+    </label>
+  </div>
+      <hr>
+
+      <div class="selectdiv">
+    <label>
+        <select>
+            <option selected> Select Sugar </option>
+            <option>Sweet</option>
+            <option>Medium</option>
+            <option>None</option>
+        </select>
+    </label>
+  </div>
+  <table>
+  <tbody>
+    <tr>
+    <td><h2>Extra</h2></td>
+    </tr>
+  <tr>
+  <td><input type="checkbox" name="vehicle" value="Bike"> Milk</td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" name="vehicle" value="Bike"> Creme</td>
+  </tr>
+  <tr>
+  <td><input type="checkbox" name="vehicle" value="Bike"> Black Sugar</td>
+  </tr>
+  </tbody>
+  </table>
+  <br>
+  <label for="pieces"><b>Pieces</b></label>
+  <input id="txt" type="text"  placeholder="Enter Pieces" name="pieces" required>
+<h2>Add Description</h2>
+  <textarea name="desc" rows="4" cols="30">
+
+  </textarea>
+
+
+
+
+      <button type="submit" class="registerbtn">ADD</button>
+    </div>
+
+    <div class="container signin">
+
+    </div>
+  </form>
+
+
+  <div class="footer">
+  <button onclick="goBack()"><img id="img1"  src="left-arrow.png"  alt="" /></button>
+  </div>
+
+  <script>
+  function goBack() {
+  window.history.back();
+  }
+  </script>
+
+
+
+</body>
+</html>

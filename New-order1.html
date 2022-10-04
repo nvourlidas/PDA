@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waitor</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background:#4d4d4d;
+}
+img{width: 30%; margin:3px 70px 15px 47px; }
+
+p{font-size: 40px; margin-left: 50px;}
+
+@media screen and (max-height: 750px) {
+  img{width: 50%; margin:3px 70px 15px 47px; background-color: white; -webkit-border-radius: 20px 18px 18px 23px;
+-moz-border-radius: 20px 18px 18px 23px;
+border-radius: 20px 18px 18px 23px; }
+
+  p{font-size: 20px; margin:center; color: white;}
+
+  table{margin-top: 60px;}
+
+  }
+
+  #but {
+    background-color:#ff0000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 50px;
+    margin: 20px;
+  }
+
+h1{text-align:center; color:white;}
+
+#new{  background-color:#ff0000;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 23px;
+  margin: 8px;
+  margin-top:150px;
+
+}
+#new1{  background-color:#ff0000;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 23px;
+  margin: 8px;
+
+
+}
+
+@media screen and (max-height: 750px) {
+
+
+  #but {
+    background-color:#ff0000;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 23px;
+    margin: 8px;
+  }
+
+  #new{  background-color:#ff0000;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 23px;
+    margin: 8px;
+    margin-top:150px;
+
+  }
+  #new1{  background-color:#ff0000;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 23px;
+    margin: 8px;
+
+
+  }
+
+  }
+  .navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: center;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.footer {
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: #ff0000;
+ color: white;
+ text-align: center;
+ height: 50px;
+}
+
+.footer button{
+background-color: #ff0000;
+border: none;
+}
+
+#img1{
+width:12%;
+background-color: none;
+height: 50px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="navbar">
+
+  <div class="dropdown">
+    <button class="dropbtn">Select Table
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="New-order.html">Inside</a>
+      <a href="New-order1.html">2nd Floor</a>
+      <a href="New-order2.html">Outside</a>
+    </div>
+  </div>
+</div>
+
+<form action="table.php" method="get">
+  <button id="but" name="table" type="submit" value="15">F1</button>
+  <button id="but" name="table" type="submit" value="16">F2</button>
+  <button id="but" name="table" type="submit" value="17">F3</button><br>
+  <button id="but" name="table" type="submit" value="18">F4</button>
+  <button id="but" name="table" type="submit" value="19">F5</button>
+  <button id="but" name="table" type="submit" value="20">F6</button>
+  <br>
+
+
+<button id="new" name="table" type="submit" value="21">F7</button>
+<button id="new" name="table" type="submit" value="22">F8</button>
+<button id="new" name="table" type="submit" value="23">F9</button><br>
+<button id="new1" name="table" type="submit" value="24">F10</button>
+<button id="new1" name="table" type="submit" value="25">F11</button>
+
+
+</form>
+
+<div class="footer">
+<button onclick="goBack()"><img id="img1"  src="left-arrow.png"  alt="" /></button>
+</div>
+
+<script>
+function goBack() {
+window.history.back();
+}
+</script>
+
+</body>
+</html>

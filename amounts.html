@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Owner</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background:#4d4d4d;
+}
+
+
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: white;}
+
+#customers tr:hover {background-color: white;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding:15px;
+  text-align: left;
+  background-color: #ff0000;
+  color: white;
+}
+
+#customers tr {
+  padding-top: 12px;
+
+  text-align: left;
+  background-color: white;
+  color: black;
+}
+
+#customers td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding:15px;
+  text-align: left;
+  background-color: white;
+  color: black;
+}
+
+a {
+  color: dodgerblue;
+}
+
+
+@media screen and (max-height: 670px) {
+  img{width: 50%; margin:3px 70px 15px 47px; background-color: white; -webkit-border-radius: 20px 18px 18px 23px;
+-moz-border-radius: 20px 18px 18px 23px;
+border-radius: 20px 18px 18px 23px; }
+
+  p{font-size: 20px; margin:center; color: white;}
+
+  table{margin-top: 60px;}
+
+  #img1{
+    width:9%;
+    height: 2px;
+
+  }
+  .footer button{
+    background-color: #ff0000;
+    border: none;
+    height: 2px;
+  }
+
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ff0000;
+   color: white;
+   text-align: center;
+   height: 10px;
+}
+
+  }
+
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ff0000;
+   color: white;
+   text-align: center;
+   height: 50px;
+}
+
+.footer button{
+  background-color: #ff0000;
+  border: none;
+}
+
+#img1{
+  width:12%;
+  background-color: none;
+  height: 50px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<br>
+
+
+<table id="customers">
+  <tr>
+
+    <th>Cash Desk</th>
+    <th>Preparation</th>
+    <th>Ready</th>
+    <th>Serving</th>
+    <th>Delivered</th>
+
+  </tr>
+  <tr>
+
+    <td> 300 €</td>
+    <td> 300 €</td>
+    <td> 300 €</td>
+    <td> 300 €</td>
+    <td> 300 €</td>
+  </tr>
+
+
+</table>
+
+<div class="footer">
+<button onclick="goBack()"><img id="img1"  src="left-arrow.png"  alt="" /></button>
+</div>
+
+<script>
+function goBack() {
+window.history.back();
+}
+</script>
+
+</body>
+</html>

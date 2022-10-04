@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background: #4d4d4d; font-size: 25px; -moz-transform: translate(0px, 20px);
+-webkit-transform: translate(0px, 20px);
+-o-transform: translate(0px, 20px);
+-ms-transform: translate(0px, 20px);
+transform: translate(0px, 20px);}
+form {}
+
+h2{
+color: white; text-align:center;}
+
+label{color: white;}
+
+input[type=text], input[type=password] {
+   width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 5px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 5px solid #555;
+}
+input[type=password]:focus {
+  border: 5px solid #555;
+}
+
+button {
+  background-color: #ff0000;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  -webkit-border-radius: 40px;
+-moz-border-radius: 40px;
+border-radius: 40px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+a{background-color: #ff0000;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+font-size: 20px;
+cursor: pointer;
+width: 100%;
+-webkit-border-radius: 40px;
+-moz-border-radius: 40px;
+border-radius: 40px;}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Login</h2>
+
+<form action="login.php" method="post">
+
+
+  <div class="container">
+    <label for="username"><b>Username</b></label>
+    <input type="text" id="username" placeholder="Enter Username" name="username" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" id="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox"  name="remember"> Remember me
+    </label>
+    <br>
+    <br>
+
+
+</form>
+
+
+
+
+
+</body>
+</html>
